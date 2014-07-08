@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>RVDCoin pool : How to mine RVDCoins (RVD)</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/sts/favicon.ico" />
+        <script type="text/javascript" src="d3.v2.min.js"></script>
+	    <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/jquery.jqplot.min.css" rel="stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+		<script class="include" language="javascript" type="text/javascript" src="js/jqplot.pieRenderer.min.js"></script>
+	    <style>
+			body {
+				padding-top: 60px;
+			}
+			line {
+                stroke: black;
+                stroke-width: 1;
+                shape-rendering: crispEdges;
+            }
+            
+            .plotline {
+                stroke-width: 1.4;
+                fill: none;
+            }
+            
+            text {
+                font-family: Sans-serif;
+                font-size: 12px;
+            }
+	    </style>
+	    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+		
+		<script>
+			function ChangeCurrentPeriod(p_Period, p_Sender)
+			{
+				period=p_Period;
+				$('#scale_menu li').removeClass('active');
+				$('#' + p_Sender).addClass('active');
+				document.location.href =  "?" + period;
+			}
+        </script>
+    </head>
+    
+    <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="navbar-inner">
+			<div class="container">
+			  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="brand" href="/">RVDCoin Mining  pool (<span class="symbol upper">RVD</span>)</a>
+			  <div class="nav-collapse collapse">
+				<ul class="nav">
+				  <li><a href="index.html">Stats</a></li>
+				  <li><a href="graphs.html">Graph</a></li>
+		              <li class="active"><a href="start.html">Getting start</a></li>
+              <li style="float:right"><a href="http://rvd.mine-pool.net/">(RVD)</a></li>
+              <li style="float:right"><a href="http://sec.mine-pool.net/">(SEC)</a></li>
+              <li style="float:right"><a href="http://ato.mine-pool.net/">(ATO)</a></li>
+              <li style="float:right"><a href="http://unc.mine-pool.net/">(UNC)</a></li>
+              <li style="float:right"><a href="http://mol.mine-pool.net/">(MOL)</a></li>
+              <li style="float:right"><a href="http://fz.mine-pool.net/">(FZ)</a></li>
+              <li style="float:right"><a href="http://qrk.mine-pool.net/">(QRK)</a></li>
+              <li style="float:right;padding-left:50px;"><a href="javascript:void()">|||</a></li>
+				</ul>
+			  </div><!--/.nav-collapse -->
+			</div>
+		  </div>
+		</div>
+        <div id="warnings"></div>
+		<center>
+			<div class="well" style="width:1000px"> 
+				<h2>Getting start to mining - RVD (RVDCoin)</h2>
+				<br>
+				Download CPUMiner:<br>
+				Windows: <a href=http://sourceforge.net/projects/philosopherstone/files/QRK/>http://sourceforge.net/projects/philosopherstone/files/QRK/</a><br>
+				Sources: <A href=https://github.com/uncle-bob/quarkcoin-cpuminer>https://github.com/uncle-bob/quarkcoin-cpuminer</a><br>
+				
+				<h2> Run miner: </h2><br>
+				Linux: <input type=text value='./minerd -a quark -t 8 -o http://rvd.mine-pool.net:9372 -u <YourRVDAddress> -p xxx' style='width:600px'><br>
+				Windows: <input type=text value='minerd64_sse4 -a quark -t 8 -o http://rvd.mine-pool.net:9372 -u <YourRVDAddress> -p xxx' style='width:600px'>
+			    <br>
+			    Change <b>&lt;YourRVDAddress&gt;</b> to You RVD Address, <b>8</b> - to you CPU Cores / Threads<br><br>
+			    Information about RVD: <a href=https://bitcointalk.org/index.php?topic=357196.0>https://bitcointalk.org/index.php?topic=357196.0</a>
+			</div>
+		</center>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43664138-4', 'mine-pool.net');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+
+</html>

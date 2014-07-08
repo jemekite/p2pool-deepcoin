@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+*~
+
+/data/
+/litecoin_scrypt/build/
+/qubitcoin-hash/build/
+/_trial_temp*
+Makefile.local
+.cache/
+.pkg/
+.coverage
+build/
+ltc_scrypt.so
