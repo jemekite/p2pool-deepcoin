@@ -27,7 +27,7 @@ Running Deepcoin P2Pool:
 To use P2Pool, you must be running your own local quarkbard. For standard
 configurations, using P2Pool should be as simple as:
 
-     python run_p2pool.py --net quarkbar
+     python run_p2pool.py --net deepcoin
     
 Then run your miner program, connecting to 127.0.0.1 on port 2334 with any
 username and password.
