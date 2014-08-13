@@ -62,9 +62,9 @@ nets = dict(
         BLOCK_PERIOD=60, # s
         SYMBOL='DCN',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'deepcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/deepCoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.deepcoin'), 'deepcoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://192.241.254.51:2750/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://192.241.254.51:2750/address/',
-        TX_EXPLORER_URL_PREFIX = 'http://192.241.254.51:2750/tx/',
+        BLOCK_EXPLORER_URL_PREFIX='http://dcn.cryptospread.com:2752/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://dcn.cryptospread.com:2752/address/',
+        TX_EXPLORER_URL_PREFIX = 'http://dcn.cryptospread.com:2752/tx/',
         ### Neisklar: normally 2**24 should be 2**20 BUT the quark enabled minerd is coded so that it only detects hashes below 0x000000xxxxxxx
         ###           and 2*20 would be 0x00000FFFF, maybe changing that in the miner  would be a good idea for slower ones... 
 		### Update:   the minerd is (at least in GitHub) updated so that it would also detect targets below 2**24 (0x000000xxxx..), (Quarkcoins starts with 2**20 (0x00000xxxx...))
